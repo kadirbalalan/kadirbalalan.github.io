@@ -5,6 +5,9 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
         <link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&family=Raleway:wght@500&family=Roboto:wght@400;600&display=swap" rel="stylesheet">
         <style>
             /* Global Cyber Elements */
             body {
@@ -211,7 +214,7 @@
                 overflow: hidden;
                 animation: pulseRope 2s infinite alternate;
             }
-
+    
             .rope::before {
                 content: '';
                 position: absolute;
@@ -224,7 +227,7 @@
                 box-shadow: 0 0 10px #00f7ff, 0 0 20px rgba(0, 247, 255, 0.8);
                 animation: glowPulse 1.5s infinite alternate;
             }
-
+    
             .rope::after {
                 content: '';
                 position: absolute;
@@ -235,17 +238,17 @@
                 background: linear-gradient(transparent, #00f7ff, transparent);
                 animation: ropeData 3s linear infinite;
             }
-
+    
             @keyframes pulseRope {
                 0% { box-shadow: 0 0 15px #00f7ff, 0 0 25px rgba(0, 247, 255, 0.5); }
                 100% { box-shadow: 0 0 25px #00f7ff, 0 0 40px rgba(0, 247, 255, 0.8); }
             }
-
+    
             @keyframes glowPulse {
                 0% { box-shadow: 0 0 10px #00f7ff, 0 0 20px rgba(0, 247, 255, 0.8); }
                 100% { box-shadow: 0 0 20px #00f7ff, 0 0 40px rgba(0, 247, 255, 0.8); }
             }
-
+    
             @keyframes ropeData {
                 0% { transform: translateY(-100%); opacity: 0; }
                 30% { opacity: 1; }
@@ -410,36 +413,58 @@
             }
             
             /* Update card content for cyber theme */
-            .card-content {
-                transform-style: preserve-3d;
-                position: relative;
-                z-index: 2;
-                text-shadow: 0 0 10px #00f7ff;
-            }
-            
-            .card-content img {
-                width: 80px;
-                height: 80px;
-                margin-bottom: 20px;
-                transform: translateZ(30px);
-                border-radius: 50%;
-                object-fit: cover;
-                border: 3px solid #00f7ff;
-                box-shadow: 0 0 15px #00f7ff;
-            }
-            
-            .card-content h3 {
-                margin-bottom: 10px;
-                color: #ffffff;
-                text-shadow: 0 0 10px #00f7ff;
-                letter-spacing: 2px;
-            }
-            
-            .card-content p {
-                color: #9beeff;
-                text-shadow: 0 0 5px #00f7ff;
-                letter-spacing: 1px;
-            }
+            .card-content h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            letter-spacing: 2px;
+            margin-bottom: 5px;
+            color: #ffffff;
+        }
+
+        .card-content h2 {
+            font-family: 'Raleway', sans-serif;
+            font-weight: 500;
+            font-size: 1.1em;
+            letter-spacing: 1px;
+            margin-top: 0;
+            color: #ffffff;
+        }
+
+        .card-content h3 {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #ffffff;
+            text-shadow: 0 0 10px #00f7ff;
+            letter-spacing: 2px;
+        }
+
+        .card-content p {
+            font-family: 'Open Sans', sans-serif;
+            color: #9beeff;
+            text-shadow: 0 0 5px #00f7ff;
+            letter-spacing: 1px;
+            line-height: 1.5;
+        }
+        
+        /* Update card content for cyber theme - keep existing styles and add/modify: */
+        .card-content {
+            transform-style: preserve-3d;
+            position: relative;
+            z-index: 2;
+            text-shadow: 0 0 10px #00f7ff;
+        }
+        
+        .card-content img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 20px;
+            transform: translateZ(30px);
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #00f7ff;
+            box-shadow: 0 0 15px #00f7ff;
+        }
             
             /* Data stream effect behind the card */
             .card-container::before {
@@ -488,7 +513,7 @@
                 width: 250px;
                 height: 350px;
                 z-index: 1000;
-                display: block; /* Default visible */
+                display: none; /* Changed to none to hide by default */
             }
             
             /* Cyber-themed floating toggle button */
@@ -766,28 +791,31 @@
         <!-- Interactive Card Script -->
         <script>
             document.addEventListener('DOMContentLoaded', () => {
-                // Floating card
-                setupCard('floatingCardElement', 'floatingCardContainer', 'floatingCardIcon');
-                
-                // Toggle floating card
-                const floatingToggle = document.getElementById('floatingToggle');
-                const floatingCard = document.getElementById('floatingCard');
-                let isVisible = true; // Start with card visible
-                
-                floatingToggle.addEventListener('click', () => {
-                    isVisible = !isVisible;
-                    if (isVisible) {
-                        floatingCard.style.display = 'block';
-                        floatingToggle.querySelector('span').textContent = 'Hide Card';
-                    } else {
-                        floatingCard.style.display = 'none';
-                        floatingToggle.querySelector('span').textContent = 'Show Card';
-                    }
-                });
-                
-                // Make floating card draggable
-                makeDraggable(floatingCard);
-            });
+    // Floating card
+    setupCard('floatingCardElement', 'floatingCardContainer', 'floatingCardIcon');
+    
+    // Toggle floating card
+    const floatingToggle = document.getElementById('floatingToggle');
+    const floatingCard = document.getElementById('floatingCard');
+    let isVisible = false; // Start with card hidden to match CSS display:none
+    
+    // Update toggle button text to reflect initial state
+    floatingToggle.querySelector('span').textContent = 'Show Card';
+    
+    floatingToggle.addEventListener('click', () => {
+        isVisible = !isVisible;
+        if (isVisible) {
+            floatingCard.style.display = 'block';
+            floatingToggle.querySelector('span').textContent = 'Hide Card';
+        } else {
+            floatingCard.style.display = 'none';
+            floatingToggle.querySelector('span').textContent = 'Show Card';
+        }
+    });
+    
+    // Make floating card draggable
+    makeDraggable(floatingCard);
+});
             
             function setupCard(cardId, containerId, iconId) {
                 const card = document.getElementById(cardId);
