@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+<!DOCTYPE <!DOCTYPE HTML>
 <html>
     <head>
         <title>Kadir Balalan Portfolio</title>
@@ -6,458 +6,935 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
         <link rel="stylesheet" href="assets/css/main.css" />
         <style>
-            .section-three {
-                margin-left: 570px; /* adjust the value to your desired position */
+            /* Global Cyber Elements */
+            body {
+                background-color: #ffffff;
+                position: relative;
+                overflow-x: hidden;
+            }
+            
+            body::before {
+                content: '';
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: 
+                    linear-gradient(rgba(0, 100, 200, 0.015) 1px, transparent 1px) 0 0 / 20px 20px,
+                    linear-gradient(90deg, rgba(0, 100, 200, 0.015) 1px, transparent 1px) 0 0 / 20px 20px;
+                pointer-events: none;
+                z-index: -1;
+            }
+            
+            #main {
+                position: relative;
+            }
+            
+            /* Section borders with subtle glow */
+            section {
+                border: 1px solid rgba(0, 200, 255, 0.1);
+                border-radius: 5px;
+                box-shadow: 0 0 10px rgba(0, 200, 255, 0.05);
+                padding: 25px;
+                margin-bottom: 30px;
+                position: relative;
+                overflow: hidden;
+            }
+            
+            section::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 2px;
+                background: linear-gradient(90deg, transparent, rgba(0, 200, 255, 0.2), transparent);
+                animation: scanEffect 4s ease-in-out infinite;
+            }
+            
+            @keyframes scanEffect {
+                0% { transform: translateX(-100%); }
+                100% { transform: translateX(100%); }
+            }
+            
+            /* Subtle heading glow */
+            h1, h2, h3, h4 {
+                position: relative;
+                text-shadow: 0 0 3px rgba(0, 200, 255, 0.2);
+            }
+            
+            /* Work item hover effect */
+            .work-item-link {
+                position: relative;
+                display: block;
+                overflow: hidden;
+                border-radius: 5px;
+                transition: all 0.3s ease;
+            }
+            
+            .work-item-link::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(135deg, rgba(0, 200, 255, 0) 0%, rgba(0, 100, 255, 0.1) 100%);
+                opacity: 0;
+                transition: opacity 0.3s ease;
+                z-index: 1;
+            }
+            
+            .work-item-link:hover {
+                transform: translateY(-3px);
+                box-shadow: 0 5px 15px rgba(0, 200, 255, 0.1);
+            }
+            
+            .work-item-link:hover::before {
+                opacity: 1;
+            }
+            
+            /* Interactive corner accents for images */
+            .work-item-link::after {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                pointer-events: none;
+                background: 
+                    linear-gradient(45deg, transparent 96%, rgba(0, 200, 255, 0.5) 96%, rgba(0, 200, 255, 0.5) 100%, transparent 100%) top left/20px 20px no-repeat,
+                    linear-gradient(135deg, transparent 96%, rgba(0, 200, 255, 0.5) 96%, rgba(0, 200, 255, 0.5) 100%, transparent 100%) top right/20px 20px no-repeat,
+                    linear-gradient(225deg, transparent 96%, rgba(0, 200, 255, 0.5) 96%, rgba(0, 200, 255, 0.5) 100%, transparent 100%) bottom right/20px 20px no-repeat,
+                    linear-gradient(315deg, transparent 96%, rgba(0, 200, 255, 0.5) 96%, rgba(0, 200, 255, 0.5) 100%, transparent 100%) bottom left/20px 20px no-repeat;
+                opacity: 0;
+                transition: opacity 0.3s ease;
+            }
+            
+            .work-item-link:hover::after {
+                opacity: 1;
+            }
+            
+            /* Header section enhancement */
+            #header {
+                border-right: 1px solid rgba(0, 200, 255, 0.1);
+                box-shadow: 2px 0 10px rgba(0, 200, 255, 0.05);
+            }
+            
+            #header .avatar img {
+                border: 2px solid rgba(0, 200, 255, 0.2);
+                transition: all 0.3s ease;
+            }
+            
+            #header .avatar img:hover {
+                box-shadow: 0 0 15px rgba(0, 200, 255, 0.3);
+            }
+            
+            /* Footer enhancement */
+            #footer {
+                border-top: 1px solid rgba(0, 200, 255, 0.1);
+            }
+            
+            #footer .icons a {
+                position: relative;
+                overflow: hidden;
+            }
+            
+            #footer .icons a::before {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 2px;
+                bottom: 0;
+                left: 0;
+                background-color: rgba(0, 200, 255, 0.5);
+                transform: scaleX(0);
+                transform-origin: bottom right;
+                transition: transform 0.3s ease;
+            }
+            
+            #footer .icons a:hover::before {
+                transform: scaleX(1);
+                transform-origin: bottom left;
+            }
+            
+            /* Contact section enhancement */
+            .contact-section .labeled-icons li {
+                transition: transform 0.3s ease;
+            }
+            
+            .contact-section .labeled-icons li:hover {
+                transform: translateX(5px);
+            }
+            
+            .contact-section .labeled-icons a {
+                position: relative;
+            }
+            
+            .contact-section .labeled-icons a::after {
+                content: '';
+                position: absolute;
+                bottom: -2px;
+                left: 0;
+                width: 100%;
+                height: 1px;
+                background: linear-gradient(90deg, transparent, rgba(0, 200, 255, 0.5), transparent);
+                transform: scaleX(0);
+                transition: transform 0.3s ease;
+            }
+            
+            .contact-section .labeled-icons a:hover::after {
+                transform: scaleX(1);
+            }
+            
+            /* Preserve the original floating card styles */
+            .contact-section {
+                max-width: 600px;
+                margin: 0 auto;
+                padding: 20px;
+            }
+            
+            /* All the original floating card styles remain unchanged */
+            /* Cyber Rope Styles */
+            .rope {
+                position: absolute;
+                width: 6px;
+                background: linear-gradient(to bottom, #00f7ff, #0066ff);
+                left: 50%;
+                transform: translateX(-50%);
+                top: 0;
+                height: 150px; /* Rope length */
+                z-index: 100;
+                box-shadow: 0 0 15px #00f7ff, 0 0 25px rgba(0, 247, 255, 0.5);
+                overflow: hidden;
+                animation: pulseRope 2s infinite alternate;
+            }
+
+            .rope::before {
+                content: '';
+                position: absolute;
+                width: 14px;
+                height: 14px;
+                background: radial-gradient(#00f7ff, #0066ff);
+                border-radius: 50%;
+                top: -7px;
+                left: -4px;
+                box-shadow: 0 0 10px #00f7ff, 0 0 20px rgba(0, 247, 255, 0.8);
+                animation: glowPulse 1.5s infinite alternate;
+            }
+
+            .rope::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 150px;
+                background: linear-gradient(transparent, #00f7ff, transparent);
+                animation: ropeData 3s linear infinite;
+            }
+
+            @keyframes pulseRope {
+                0% { box-shadow: 0 0 15px #00f7ff, 0 0 25px rgba(0, 247, 255, 0.5); }
+                100% { box-shadow: 0 0 25px #00f7ff, 0 0 40px rgba(0, 247, 255, 0.8); }
+            }
+
+            @keyframes glowPulse {
+                0% { box-shadow: 0 0 10px #00f7ff, 0 0 20px rgba(0, 247, 255, 0.8); }
+                100% { box-shadow: 0 0 20px #00f7ff, 0 0 40px rgba(0, 247, 255, 0.8); }
+            }
+
+            @keyframes ropeData {
+                0% { transform: translateY(-100%); opacity: 0; }
+                30% { opacity: 1; }
+                80% { opacity: 1; }
+                100% { transform: translateY(100%); opacity: 0; }
+            }
+            
+            .card-container {
+                perspective: 1000px;
+                width: 300px;
+                height: 400px;
+                cursor: grab;
+                position: absolute;
+                top: 150px; /* Position below the rope */
+                left: 50%;
+                transform: translateX(-50%);
+                z-index: 99;
+                animation: swing 3s ease-in-out infinite;
+                transform-origin: top center;
+                pointer-events: auto; /* Make the card interactive */
+            }
+            
+            @keyframes swing {
+                0% { transform: translateX(-50%) rotate(3deg); box-shadow: 0 0 15px rgba(0, 247, 255, 0.5); }
+                50% { transform: translateX(-50%) rotate(-3deg); box-shadow: 0 0 25px rgba(0, 247, 255, 0.7); }
+                100% { transform: translateX(-50%) rotate(3deg); box-shadow: 0 0 15px rgba(0, 247, 255, 0.5); }
+            }
+            
+            /* Cyber Card Frames */
+            .card {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                transform-style: preserve-3d;
+                transition: transform 0.1s ease;
+                border-radius: 15px;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+                animation: constantJiggle 2s ease-in-out infinite;
+                background: linear-gradient(45deg, #0c0c1f, #141437);
+            }
+            
+            @keyframes constantJiggle {
+                0% { transform: rotate(0deg) translateZ(0); }
+                25% { transform: rotate(-2deg) translateZ(0); }
+                50% { transform: rotate(2deg) translateZ(0); }
+                75% { transform: rotate(-1deg) translateZ(0); }
+                100% { transform: rotate(0deg) translateZ(0); }
+            }
+            
+            .card.dragging {
+                cursor: grabbing;
+                animation: none;
+            }
+            
+            .card-face {
+                border: 2px solid #00f7ff;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                backface-visibility: hidden;
+                border-radius: 15px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                text-align: center;
+                padding: 20px;
+                box-sizing: border-box;
+                overflow: hidden;
+                background: linear-gradient(45deg, #0c0c1f, #141437);
+                box-shadow: 0 0 15px #00f7ff, inset 0 0 10px rgba(0, 247, 255, 0.3);
+            }
+            
+            .card-face::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                height: 2px;
+                background: #00f7ff;
+                box-shadow: 0 0 10px #00f7ff, 0 0 20px #00f7ff;
+                animation: scanline 2s linear infinite;
+                opacity: 0.7;
+            }
+            
+            /* Card corners with cyber accents */
+            .card-face::before {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                border-radius: 15px;
+                pointer-events: none;
+                background: 
+                    linear-gradient(45deg, transparent 90%, #00f7ff 90%, #00f7ff 100%, transparent 100%) top left/30px 30px no-repeat,
+                    linear-gradient(135deg, transparent 90%, #00f7ff 90%, #00f7ff 100%, transparent 100%) top right/30px 30px no-repeat,
+                    linear-gradient(225deg, transparent 90%, #00f7ff 90%, #00f7ff 100%, transparent 100%) bottom right/30px 30px no-repeat,
+                    linear-gradient(315deg, transparent 90%, #00f7ff 90%, #00f7ff 100%, transparent 100%) bottom left/30px 30px no-repeat;
+                box-shadow: inset 0 0 15px rgba(0, 247, 255, 0.3);
+            }
+            
+            @keyframes scanline {
+                0% { top: 0; }
+                100% { top: 100%; }
+            }
+            
+            .card-front {
+                background-image: url('images/backg.jpg');
+                background-size: cover;
+                background-position: center;
+            }
+            
+            .card-front::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.4);
+                border-radius: 15px;
+            }
+            
+            .card-back {
+                background-image: url('images/backg.jpg');
+                background-size: cover;
+                background-position: center;
+                transform: rotateY(180deg);
+            }
+            
+            .card-back::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.4);
+                border-radius: 15px;
+            }
+            
+            .shine {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                border-radius: 15px;
+                background: linear-gradient(135deg, 
+                                rgba(0, 247, 255, 0.2) 0%, 
+                                rgba(0, 247, 255, 0) 60%);
+                pointer-events: none;
+                animation: shineEffect 3s ease-in-out infinite;
+            }
+            
+            @keyframes shineEffect {
+                0% { opacity: 0.4; }
+                50% { opacity: 0.8; }
+                100% { opacity: 0.4; }
+            }
+            
+            /* Update card content for cyber theme */
+            .card-content {
+                transform-style: preserve-3d;
+                position: relative;
+                z-index: 2;
+                text-shadow: 0 0 10px #00f7ff;
+            }
+            
+            .card-content img {
+                width: 80px;
+                height: 80px;
+                margin-bottom: 20px;
+                transform: translateZ(30px);
+                border-radius: 50%;
+                object-fit: cover;
+                border: 3px solid #00f7ff;
+                box-shadow: 0 0 15px #00f7ff;
+            }
+            
+            .card-content h3 {
+                margin-bottom: 10px;
+                color: #ffffff;
+                text-shadow: 0 0 10px #00f7ff;
+                letter-spacing: 2px;
+            }
+            
+            .card-content p {
+                color: #9beeff;
+                text-shadow: 0 0 5px #00f7ff;
+                letter-spacing: 1px;
+            }
+            
+            /* Data stream effect behind the card */
+            .card-container::before {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background: 
+                    linear-gradient(rgba(0, 247, 255, 0.2) 0.5px, transparent 0.5px) 0 0 / 10px 10px,
+                    linear-gradient(90deg, rgba(0, 247, 255, 0.2) 0.5px, transparent 0.5px) 0 0 / 10px 10px;
+                border-radius: 15px;
+                z-index: -1;
+                animation: dataStream 3s linear infinite;
+                opacity: 0.5;
+            }
+            
+            @keyframes dataStream {
+                0% { background-position: 0 0, 0 0; }
+                100% { background-position: 0 10px, 10px 0; }
+            }
+            
+            .floating {
+                animation: float 3s ease-in-out infinite;
+            }
+            
+            @keyframes float {
+                0% {
+                    transform: translateZ(30px);
+                    box-shadow: 0 0 15px #00f7ff;
+                }
+                50% {
+                    transform: translateZ(50px);
+                    box-shadow: 0 0 25px #00f7ff;
+                }
+                100% {
+                    transform: translateZ(30px);
+                    box-shadow: 0 0 15px #00f7ff;
+                }
+            }
+            
+            /* Make the card float above content */
+            .floating-card {
+                position: fixed;
+                top: 100px;
+                right: 50px;
+                width: 250px;
+                height: 350px;
+                z-index: 1000;
+                display: block; /* Default visible */
+            }
+            
+            /* Cyber-themed floating toggle button */
+            .floating-toggle {
+                position: fixed;
+                top: 20px;
+                right: 50px;
+                z-index: 1001;
+                cursor: pointer;
+                
+                /* Reset default button styles */
+                background: none;
+                border: none;
+                outline: none;
+                padding: 0;
+                
+                /* Cyber button container */
+                width: 120px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
+                /* Button glow effect */
+                --button-glow: #00fffc;
+                --button-background: #0e1538;
+                
+                /* Animated background */
+                background: var(--button-background);
+                border-radius: 5px;
+                box-shadow: 0 0 10px var(--button-glow), 
+                            0 0 20px var(--button-glow), 
+                            inset 0 0 15px rgba(0, 255, 252, 0.5);
+                overflow: hidden;
+                transition: all 0.3s ease;
+            }
+            
+            /* Button hover effect */
+            .floating-toggle:hover {
+                box-shadow: 0 0 15px var(--button-glow), 
+                            0 0 30px var(--button-glow), 
+                            inset 0 0 20px rgba(0, 255, 252, 0.75);
+                transform: translateY(-2px);
+            }
+            
+            /* Button active/click effect */
+            .floating-toggle:active {
+                transform: translateY(1px);
+                box-shadow: 0 0 5px var(--button-glow), 
+                            inset 0 0 10px rgba(0, 255, 252, 0.5);
+            }
+            
+            /* Button text */
+            .floating-toggle span {
+                color: #fff;
+                font-family: 'Courier New', monospace;
+                font-weight: bold;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                font-size: 14px;
+                position: relative;
+                z-index: 2;
+                text-shadow: 0 0 5px var(--button-glow);
+            }
+            
+            /* Animated border */
+            .floating-toggle::before {
+                content: '';
+                position: absolute;
+                width: 140%;
+                height: 100%;
+                background: linear-gradient(90deg, transparent, var(--button-glow), transparent);
+                top: 0;
+                left: -20%;
+                transform: skewX(25deg);
+                animation: borderGlow 3s linear infinite;
+            }
+            
+            @keyframes borderGlow {
+                0% { left: -140%; }
+                50% { left: 100%; }
+                100% { left: 100%; }
+            }
+            
+            /* Scanline effect */
+            .floating-toggle::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 2px;
+                background: rgba(255, 255, 255, 0.5);
+                animation: scanline 2s linear infinite;
+                opacity: 0.5;
+            }
+            
+            /* Attention-grabbing pulse */
+            .floating-toggle {
+                animation: pulse 2s infinite;
+            }
+            
+            @keyframes pulse {
+                0% { transform: scale(1); }
+                50% { transform: scale(1.05); }
+                100% { transform: scale(1); }
+            }
+            
+            /* Media query for mobile responsiveness */
+            @media screen and (max-width: 736px) {
+                .card-container {
+                    width: 250px;
+                    height: 350px;
+                }
+                
+                .floating-card {
+                    right: 20px;
+                    width: 200px;
+                    height: 300px;
+                }
+                
+                .floating-toggle {
+                    right: 20px;
+                    width: 100px;
+                    font-size: 12px;
+                }
             }
         </style>
     </head>
     <body class="is-preload">
 
-		<!-- Header -->
-			<header id="header">
-				<div class="inner">
-					<a href="#" class="image avatar"><img src="images/avatar.jpg" alt="" /></a>
-					<h1><strong>Kadir Balalan</strong> Writer and Programmer<br />
-						<br />Wrote children stories at the age of 8, writing articles at Turkey Intelligence Foundation at the age of 22!<br />
-					</a></h1>
-				</div>
-			</header>
+        <!-- Header -->
+        <header id="header">
+            <div class="inner">
+                <a href="#" class="image avatar"><img src="images/avatar.jpg" alt="Kadir Balalan" /></a>
+                <h1><strong>Kadir Balalan</strong> Writer and Aspiring Journalist<br />
+                    Writing. J</h1>
+            </div>
+        </header>
+        
+        <!-- Floating Card Toggle Button -->
+        <button class="floating-toggle" id="floatingToggle">
+            <span>Hide Card</span>
+        </button>
+        
+        <!-- Floating Card Version (positioned absolutely) -->
+        <div class="floating-card" id="floatingCard">
+            <div class="rope"></div>
+            <div class="card-container" id="floatingCardContainer">
+                <div class="card" id="floatingCardElement">
+                    <div class="card-face card-front">
+                        <div class="card-content">
+                            <img src="images/avatar.jpg" alt="Kadir Balalan" class="floating" id="floatingCardIcon">
+                            <h1>Kadir Balalan</h1>
+                            <p> <h2>Writer & Journalist</h2> <br> This floating card was made by AI to showcase my proficieny on using AI</p>
+                        </div>
+                        <div class="shine"></div>
+                    </div>
+                    <div class="card-face card-back">
+                        <div class="card-content">
+                            <img src="images/avatar.jpg" alt="Kadir Balalan" class="floating">
+                            <h3>My Skills</h3>
+                            <p>Writing • Data Analysis • NLP • Python • AI</p>
+                        </div>
+                        <div class="shine"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-		<!-- Main -->
-			<div id="main">
+        <!-- Main -->
+        <div id="main">
 
-				<!-- One -->
-					<section id="one">
-						<header class="major">
-							<h1>Welcome to my portfolio website! I am Kadir.</h1>
-						</header>
-						<p>I am a writer with a passion for topics such as physics, science and technology. I love challenging myself to write on various different subjects. Take a look at my projects below!</p>
-					</section>
+            <!-- One -->
+            <section id="one">
+                <header class="major">
+                    <h2>Welcome to my portfolio website! I am Kadir.</h2>
+                </header>
+                <p>I am a writer with a passion for topics such as physics, science and technology. I love challenging myself to write on various different subjects. Take a look at my projects below!</p>
+            </section>
 
-				<!-- Two -->
+            <!-- Two -->
+            <section id="two">
+                <h2>All Projects</h2>
+                <h3>Creative Works</h3>
+                <div class="row">
+                    <article class="col-6 col-12-xsmall work-item">
+                        <a href="https://drive.google.com/drive/folders/11St-kqZXDHycR-AmwUQvhBQPTYHqtSFT?usp=drive_link" class="work-item-link">
+                            <img src="images/thumbs/writing.png" alt="My Articles" />
+                        </a>
+                        <h4>My Articles - Google Drive</h4>
+                        <p>You can find my academic writings I wrote at university, my freelance gaming articles and my articles on Turkish Intelligence Foundation!</p>
+                    </article>
+                </div>
+                <h3>Data Analysis Projects</h3>
+                <div class="row">
+                    <article class="col-6 col-12-xsmall work-item">
+                        <a href="https://github.com/kadirbalalan/exoplanets" class="work-item-link">
+                            <img src="images/thumbs/nea_logo.png" alt="Exoplanets Project" />
+                        </a>
+                        <h4>Exoplanets Data Analysis with Pandas</h4>
+                        <p>This project intends to learn more about exoplanets using NASA's exoplanets data.</p>
+                    </article>
+                </div>
+                <h3>Artificial Intelligence Projects</h3>
+                <div class="row">
+                    <article class="col-6 col-12-xsmall work-item">
+                        <a href="https://github.com/kadirbalalan/Text-Classification-SpaCy/blob/main/Classification.ipynb" class="work-item-link">
+                            <img src="images/thumbs/Cover (1).jpg" alt="Text Classification Project" />
+                        </a>
+                        <h4>Text Classification with SpaCy - NLP</h4>
+                        <p>This is a model that can identify positive or negative movie reviews.</p>
+                    </article>
+                    <article class="col-6 col-12-xsmall work-item">
+                        <a href="https://huggingface.co/spaces/kadirbalalan/Text-Summarizer-Multi-Language" class="work-item-link">
+                            <img src="images/thumbs/Cover (2).jpg" alt="Text Summarizer Project" />
+                        </a>
+                        <h4>Multi-language Text Summarizer with SpaCy - NLP</h4>
+                        <p>This is a model that can summarize a text in English and Turkish.</p>
+                    </article>
+                </div>
+                <h3>Pure Python Programs</h3>
+                <div class="row">
+                    <article class="col-6 col-12-xsmall work-item">
+                        <a href="https://github.com/kadirbalalan/pinsecrets" class="work-item-link">
+                            <img src="images/thumbs/01.jpg" alt="PinSecrets Project" />
+                        </a>
+                        <h4>PinSecrets - Personalized Password Creator</h4>
+                        <p>Create a strong password that is generated just for you. A project written entirely in Python.</p>
+                    </article>
+                </div>
+            </section>
 
-				<section id="two">
-					<h1>All Projects</h1>
-					<h2>Creative Works</h2>
-					<div class="row">
-						<br>
-						<article class="col-6 col-12-xsmall work-item">
-							<a href="https://drive.google.com/drive/folders/11St-kqZXDHycR-AmwUQvhBQPTYHqtSFT?usp=drive_link" class="work-item-link">
-							  <img src="images/thumbs/writing.png" alt="" />
-							</a>
-							<h3>My Articles - Google Drive</h3>
-							<p>You can find my academic writings I wrote at university, my freelance gaming articles and my articles on Turkish Intelligence Foundation!</p>
-						  </article>	
-						  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						  <br>
-					<h2>Data Analysis Projects</h2>
-					<div class="row">
-						<br>
-						<article class="col-6 col-12-xsmall work-item">
-							<a href="https://github.com/kadirbalalan/exoplanets" class="work-item-link">
-							  <img src="images/thumbs/nea_logo.png" alt="" />
-							</a>
-							<h3>Exoplanets Data Analysis with Pandas</h3>
-							<p>This project intends to learn more about exoplanets using NASA's exoplanets data.</p>
-						  </article>
-						  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						<h2>Artifical Intelligence Projects</h2>
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-					  <article class="col-6 col-12-xsmall work-item">
-						<a href="https://github.com/kadirbalalan/Text-Classification-SpaCy/blob/main/Classification.ipynb" class="work-item-link">
-						  <img src="images/thumbs/Cover (1).jpg" alt="" />
-						</a>
-						<h3>Text Classification with SpaCy - NLP</h3>
-						<p>This is a model that can identify positive or negative movie reviews.</p>
-					  </article>
-				  
-					  <article class="col-6 col-12-xsmall work-item">
-						<a href="https://huggingface.co/spaces/kadirbalalan/Text-Summarizer-Multi-Language" class="work-item-link">
-						  <img src="images/thumbs/Cover (2).jpg" alt="" />
-						</a>
-						<h3>Multi-language Text Summarizer with SpaCy - NLP</h3>
-						<p>This is a model that can summarize a text in English and Turkish.</p>
-					  </article>
+            <!-- Three -->
+            <section id="three" class="contact-section">
+                <h2>Get In Touch</h2>
+                <p>Thanks for checking out my portfolio! If you have any questions, comments, or would like to discuss potential projects, please don't hesitate to get in touch with me.</p>
+                <ul class="labeled-icons">
+                    <li>
+                        <h3 class="icon solid fa-home"><span class="label">Address</span></h3>
+                        Ankara, Turkey<br />
+                    </li>
+                    <li>
+                        <h3 class="icon solid fa-mobile-alt"><span class="label">Phone</span></h3>
+                        +90 554-258-0426
+                    </li>
+                    <li>
+                        <h3 class="icon solid fa-envelope"><span class="label">Email</span></h3>
+                        <a href="mailto:kadirbalalan0@gmail.com">kadirbalalan0@gmail.com</a>
+                    </li>
+                </ul>
+            </section>
 
-					  <h2>Pure Python Programs</h2>
-					  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-					  <article class="col-6 col-12-xsmall work-item">
-						<a href="https://github.com/kadirbalalan/pinsecrets" class="work-item-link">
-						  <img src="images/thumbs/01.jpg" alt="" />
-						</a>
-						<h3>PinSecrets - Personalized Password Creator</h3>
-						<p>Create a strong password that is generated just for you. A project written entirely in Python.</p>
-					  </article>
-					</div>
-				  </section>
-				  
-				  
+        </div>
 
-				<!-- Three -->
-				<section id="three" class="section-three">
-						<h2>Get In Touch</h2>
-						<p>Thanks for checking out my portfolio! If you have any questions, comments, or would like to discuss potential projects, please don't hesitate to get in touch with me. </p>
-						<div class="row">
-							<div class="col-4 col-12-small">
-							  <ul class="labeled-icons">
-								<li>
-								  <h3 class="icon solid fa-home"><span class="label">Address</span></h3>
-								  Ankara, Turkey<br />
-								</li>
-								<li>
-								  <h3 class="icon solid fa-mobile-alt"><span class="label">Phone</span></h3>
-								  +90 554-258-0426
-								</li>
-								<li>
-								  <h3 class="icon solid fa-envelope"><span class="label">Email</span></h3>
-								  <a href="https://mail.google.com/mail/?view=cm&source=mailto&to=kadirbalalan0@gmail.com">kadirbalalan0@gmail.com</a>
-								</li>
-							  </ul>
-							</div>
-							<div class="col-8 col-12-small">
-							</div>
-						  </div>						  
-					</section>
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="inner">
+                <ul class="icons">
+                    <li><a href="https://www.linkedin.com/in/kadirbalalan/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+                    <li><a href="https://github.com/kadirbalalan" class="icon brands fa-github"><span class="label">Github</span></a></li>
+                    <li><a href="mailto:kadirbalalan0@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+                </ul>
+            </div>
+        </footer>
 
-				<!-- Four -->
-				<!--
-					<section id="four">
-						<h2>Elements</h2>
-
-						<section>
-							<h4>Text</h4>
-							<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-							This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-							This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-							<hr />
-							<header>
-								<h4>Heading with a Subtitle</h4>
-								<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-							</header>
-							<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-							<header>
-								<h5>Heading with a Subtitle</h5>
-								<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-							</header>
-							<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-							<hr />
-							<h2>Heading Level 2</h2>
-							<h3>Heading Level 3</h3>
-							<h4>Heading Level 4</h4>
-							<h5>Heading Level 5</h5>
-							<h6>Heading Level 6</h6>
-							<hr />
-							<h5>Blockquote</h5>
-							<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-							<h5>Preformatted</h5>
-							<pre><code>i = 0;
-
-while (!deck.isInOrder()) {
-print 'Iteration ' + i;
-deck.shuffle();
-i++;
-}
-
-print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-						</section>
-
-						<section>
-							<h4>Lists</h4>
-							<div class="row">
-								<div class="col-6 col-12-xsmall">
-									<h5>Unordered</h5>
-									<ul>
-										<li>Dolor pulvinar etiam magna etiam.</li>
-										<li>Sagittis adipiscing lorem eleifend.</li>
-										<li>Felis enim feugiat dolore viverra.</li>
-									</ul>
-									<h5>Alternate</h5>
-									<ul class="alt">
-										<li>Dolor pulvinar etiam magna etiam.</li>
-										<li>Sagittis adipiscing lorem eleifend.</li>
-										<li>Felis enim feugiat dolore viverra.</li>
-									</ul>
-								</div>
-								<div class="col-6 col-12-xsmall">
-									<h5>Ordered</h5>
-									<ol>
-										<li>Dolor pulvinar etiam magna etiam.</li>
-										<li>Etiam vel felis at lorem sed viverra.</li>
-										<li>Felis enim feugiat dolore viverra.</li>
-										<li>Dolor pulvinar etiam magna etiam.</li>
-										<li>Etiam vel felis at lorem sed viverra.</li>
-										<li>Felis enim feugiat dolore viverra.</li>
-									</ol>
-									<h5>Icons</h5>
-									<ul class="icons">
-										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-										<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-										<li><a href="#" class="icon brands fa-tumblr"><span class="label">Tumblr</span></a></li>
-									</ul>
-								</div>
-							</div>
-							<h5>Actions</h5>
-							<ul class="actions">
-								<li><a href="#" class="button primary">Default</a></li>
-								<li><a href="#" class="button">Default</a></li>
-							</ul>
-							<ul class="actions small">
-								<li><a href="#" class="button primary small">Small</a></li>
-								<li><a href="#" class="button small">Small</a></li>
-							</ul>
-							<div class="row">
-								<div class="col-6 col-12-small">
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-								</div>
-								<div class="col-6 col-12-small">
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary small">Small</a></li>
-										<li><a href="#" class="button small">Small</a></li>
-									</ul>
-								</div>
-								<div class="col-6 col-12-small">
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary fit">Default</a></li>
-										<li><a href="#" class="button fit">Default</a></li>
-									</ul>
-								</div>
-								<div class="col-6 col-12-small">
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary small fit">Small</a></li>
-										<li><a href="#" class="button small fit">Small</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-
-						<section>
-							<h4>Table</h4>
-							<h5>Default</h5>
-							<div class="table-wrapper">
-								<table>
-									<thead>
-										<tr>
-											<th>Name</th>
-											<th>Description</th>
-											<th>Price</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Item One</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item Two</td>
-											<td>Vis ac commodo adipiscing arcu aliquet.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item Three</td>
-											<td> Morbi faucibus arcu accumsan lorem.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item Four</td>
-											<td>Vitae integer tempus condimentum.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item Five</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-									</tbody>
-									<tfoot>
-										<tr>
-											<td colspan="2"></td>
-											<td>100.00</td>
-										</tr>
-									</tfoot>
-								</table>
-							</div>
-
-							<h5>Alternate</h5>
-							<div class="table-wrapper">
-								<table class="alt">
-									<thead>
-										<tr>
-											<th>Name</th>
-											<th>Description</th>
-											<th>Price</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Item One</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item Two</td>
-											<td>Vis ac commodo adipiscing arcu aliquet.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item Three</td>
-											<td> Morbi faucibus arcu accumsan lorem.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item Four</td>
-											<td>Vitae integer tempus condimentum.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item Five</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-									</tbody>
-									<tfoot>
-										<tr>
-											<td colspan="2"></td>
-											<td>100.00</td>
-										</tr>
-									</tfoot>
-								</table>
-							</div>
-						</section>
-
-						<section>
-							<h4>Buttons</h4>
-							<ul class="actions">
-								<li><a href="#" class="button primary">Primary</a></li>
-								<li><a href="#" class="button">Default</a></li>
-							</ul>
-							<ul class="actions">
-								<li><a href="#" class="button large">Large</a></li>
-								<li><a href="#" class="button">Default</a></li>
-								<li><a href="#" class="button small">Small</a></li>
-							</ul>
-							<ul class="actions fit">
-								<li><a href="#" class="button primary fit">Fit</a></li>
-								<li><a href="#" class="button fit">Fit</a></li>
-							</ul>
-							<ul class="actions fit small">
-								<li><a href="#" class="button primary fit small">Fit + Small</a></li>
-								<li><a href="#" class="button fit small">Fit + Small</a></li>
-							</ul>
-							<ul class="actions">
-								<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
-								<li><a href="#" class="button icon solid fa-download">Icon</a></li>
-							</ul>
-							<ul class="actions">
-								<li><span class="button primary disabled">Primary</span></li>
-								<li><span class="button disabled">Default</span></li>
-							</ul>
-						</section>
-
-						<section>
-							<h4>Form</h4>
-							<form method="post" action="#">
-								<div class="row gtr-uniform gtr-50">
-									<div class="col-6 col-12-xsmall">
-										<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
-									</div>
-									<div class="col-6 col-12-xsmall">
-										<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
-									</div>
-									<div class="col-12">
-										<select name="demo-category" id="demo-category">
-											<option value="">- Category -</option>
-											<option value="1">Manufacturing</option>
-											<option value="1">Shipping</option>
-											<option value="1">Administration</option>
-											<option value="1">Human Resources</option>
-										</select>
-									</div>
-									<div class="col-4 col-12-small">
-										<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-										<label for="demo-priority-low">Low Priority</label>
-									</div>
-									<div class="col-4 col-12-small">
-										<input type="radio" id="demo-priority-normal" name="demo-priority">
-										<label for="demo-priority-normal">Normal Priority</label>
-									</div>
-									<div class="col-4 col-12-small">
-										<input type="radio" id="demo-priority-high" name="demo-priority">
-										<label for="demo-priority-high">High Priority</label>
-									</div>
-									<div class="col-6 col-12-small">
-										<input type="checkbox" id="demo-copy" name="demo-copy">
-										<label for="demo-copy">Email me a copy of this message</label>
-									</div>
-									<div class="col-6 col-12-small">
-										<input type="checkbox" id="demo-human" name="demo-human" checked>
-										<label for="demo-human">I am a human and not a robot</label>
-									</div>
-									<div class="col-12">
-										<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-									</div>
-									<div class="col-12">
-										<ul class="actions">
-											<li><input type="submit" value="Send Message" class="primary" /></li>
-											<li><input type="reset" value="Reset" /></li>
-										</ul>
-									</div>
-								</div>
-							</form>
-						</section>
-
-						<section>
-							<h4>Image</h4>
-							<h5>Fit</h5>
-							<div class="box alt">
-								<div class="row gtr-50 gtr-uniform">
-									<div class="col-12"><span class="image fit"><img src="images/fulls/05.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/01.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/02.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/03.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/04.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/05.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/06.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/03.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/02.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/01.jpg" alt="" /></span></div>
-								</div>
-							</div>
-							<h5>Left &amp; Right</h5>
-							<p><span class="image left"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-							<p><span class="image right"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-						</section>
-
-					</section>
-				-->
-
-			</div>
-
-		<!-- Footer -->
-			<footer id="footer">
-				<div class="inner">
-					<ul class="icons">
-						<li><a href="https://www.linkedin.com/in/kadirbalalan/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
-						<li><a href="https://github.com/kadirbalalan" class="icon brands fa-github"><span class="label">Github</span></a></li>
-						<li><a href="https://mail.google.com/mail/?view=cm&source=mailto&to=kadirbalalan0@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-					</ul>
-				</div>
-			</footer>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.poptrox.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.poptrox.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+        
+        <!-- Interactive Card Script -->
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                // Floating card
+                setupCard('floatingCardElement', 'floatingCardContainer', 'floatingCardIcon');
+                
+                // Toggle floating card
+                const floatingToggle = document.getElementById('floatingToggle');
+                const floatingCard = document.getElementById('floatingCard');
+                let isVisible = true; // Start with card visible
+                
+                floatingToggle.addEventListener('click', () => {
+                    isVisible = !isVisible;
+                    if (isVisible) {
+                        floatingCard.style.display = 'block';
+                        floatingToggle.querySelector('span').textContent = 'Hide Card';
+                    } else {
+                        floatingCard.style.display = 'none';
+                        floatingToggle.querySelector('span').textContent = 'Show Card';
+                    }
+                });
+                
+                // Make floating card draggable
+                makeDraggable(floatingCard);
+            });
+            
+            function setupCard(cardId, containerId, iconId) {
+                const card = document.getElementById(cardId);
+                const cardContainer = document.getElementById(containerId);
+                const cardIcon = document.getElementById(iconId);
+                
+                let isDragging = false;
+                let startX, startY;
+                let rotateX = 0, rotateY = 0;
+                let lastX, lastY;
+                let flipped = false;
+                
+                // Handle mouse down event
+                cardContainer.addEventListener('mousedown', (e) => {
+                    isDragging = true;
+                    card.classList.add('dragging');
+                    startX = e.clientX;
+                    startY = e.clientY;
+                    lastX = rotateY;
+                    lastY = rotateX;
+                    
+                    // Stop any ongoing animation
+                    card.style.animation = 'none';
+                });
+                
+                // Handle mouse move event
+                window.addEventListener('mousemove', (e) => {
+                    if (!isDragging || card !== document.getElementById(cardId)) return;
+                    
+                    const deltaX = e.clientX - startX;
+                    const deltaY = e.clientY - startY;
+                    
+                    // Calculate rotation based on mouse movement
+                    rotateY = lastX + deltaX * 0.5;
+                    rotateX = lastY - deltaY * 0.5;
+                    
+                    // Limit rotation
+                    rotateX = Math.max(-45, Math.min(45, rotateX));
+                    rotateY = Math.max(-45, Math.min(45, rotateY));
+                    
+                    updateCardTransform(card, rotateX, rotateY, flipped);
+                });
+                
+                // Handle mouse up event
+                window.addEventListener('mouseup', () => {
+                    if (isDragging && card === document.getElementById(cardId)) {
+                        isDragging = false;
+                        card.classList.remove('dragging');
+                        
+                        // Resume constant jiggle animation
+                        card.style.animation = 'constantJiggle 2s ease-in-out infinite';
+                        
+                        // Return to neutral rotation
+                        rotateX = 0;
+                        rotateY = 0;
+                        updateCardTransform(card, rotateX, rotateY, flipped);
+                    }
+                });
+                
+                // Touch support for mobile devices
+                cardContainer.addEventListener('touchstart', (e) => {
+                    isDragging = true;
+                    card.classList.add('dragging');
+                    startX = e.touches[0].clientX;
+                    startY = e.touches[0].clientY;
+                    lastX = rotateY;
+                    lastY = rotateX;
+                    card.style.animation = 'none';
+                });
+                
+                window.addEventListener('touchmove', (e) => {
+                    if (!isDragging || card !== document.getElementById(cardId)) return;
+                    
+                    const deltaX = e.touches[0].clientX - startX;
+                    const deltaY = e.touches[0].clientY - startY;
+                    
+                    rotateY = lastX + deltaX * 0.5;
+                    rotateX = lastY - deltaY * 0.5;
+                    
+                    rotateX = Math.max(-45, Math.min(45, rotateX));
+                    rotateY = Math.max(-45, Math.min(45, rotateY));
+                    
+                    updateCardTransform(card, rotateX, rotateY, flipped);
+                });
+                
+                window.addEventListener('touchend', () => {
+                    if (isDragging && card === document.getElementById(cardId)) {
+                        isDragging = false;
+                        card.classList.remove('dragging');
+                        card.style.animation = 'constantJiggle 2s ease-in-out infinite';
+                        rotateX = 0;
+                        rotateY = 0;
+                        updateCardTransform(card, rotateX, rotateY, flipped);
+                    }
+                });
+            }
+            
+            function updateCardTransform(card, rotateX, rotateY, flipped) {
+                const flipRotation = flipped ? ' rotateY(180deg)' : '';
+                card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)${flipRotation}`;
+            }
+            
+            function makeDraggable(element) {
+                let offsetX = 0, offsetY = 0;
+                let isDragging = false;
+                
+                element.addEventListener('mousedown', (e) => {
+                    if (e.target.closest('.card-container')) return; // Prevent dragging when interacting with card
+                    
+                    isDragging = true;
+                    offsetX = e.clientX - element.getBoundingClientRect().left;
+                    offsetY = e.clientY - element.getBoundingClientRect().top;
+                });
+                
+                document.addEventListener('mousemove', (e) => {
+                    if (!isDragging) return;
+                    
+                    element.style.left = (e.clientX - offsetX) + 'px';
+                    element.style.top = (e.clientY - offsetY) + 'px';
+                    element.style.right = 'auto'; // Clear the right position
+                });
+                
+                document.addEventListener('mouseup', () => {
+                    isDragging = false;
+                });
+                
+                // Touch support
+                element.addEventListener('touchstart', (e) => {
+                    if (e.target.closest('.card-container')) return;
+                    
+                    isDragging = true;
+                    offsetX = e.touches[0].clientX - element.getBoundingClientRect().left;
+                    offsetY = e.touches[0].clientY - element.getBoundingClientRect().top;
+                });
+                
+                document.addEventListener('touchmove', (e) => {
+                    if (!isDragging) return;
+                    
+                    element.style.left = (e.touches[0].clientX - offsetX) + 'px';
+                    element.style.top = (e.touches[0].clientY - offsetY) + 'px';
+                    element.style.right = 'auto';
+                });
+                
+                document.addEventListener('touchend', () => {
+                    isDragging = false;
+                });
+            }
+        </script>
+    </body>
 </html>
