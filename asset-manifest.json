@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.fd4f0176.css",
+    "main.js": "/static/js/main.deb20bfd.js",
+    "static/js/453.43deabb9.chunk.js": "/static/js/453.43deabb9.chunk.js",
+    "static/media/bg-light.png": "/static/media/bg-light.bac0efb485244a522981.png",
+    "static/media/bg-dark.png": "/static/media/bg-dark.f420c6b8458af72de935.png",
+    "static/media/nea_logo.png": "/static/media/nea_logo.62f60deb2b7c79c2afce.png",
+    "static/media/pp.jpeg": "/static/media/pp.f10ebaf329b6d98a59aa.jpeg",
+    "static/media/text-class.jpg": "/static/media/text-class.b7a212f4f6e1bfc87785.jpg",
+    "static/media/harvard.png": "/static/media/harvard.912215f63d6fb3767556.png",
+    "static/media/idsa.png": "/static/media/idsa.8dd339208be03a58dc36.png",
+    "static/media/pinsecret.jpg": "/static/media/pinsecret.00c951f9c8ff1ead340b.jpg",
+    "static/media/seo.png": "/static/media/seo.5150f24b3544fdff4532.png",
+    "static/media/google.png": "/static/media/google.88f927ee97d456f888ff.png",
+    "static/media/growth.png": "/static/media/growth.608a91adde74202ad77c.png",
+    "static/media/hacettepe.png": "/static/media/hacettepe.8ffe7be2b8a1a7485f89.png",
+    "index.html": "/index.html",
+    "main.fd4f0176.css.map": "/static/css/main.fd4f0176.css.map",
+    "main.deb20bfd.js.map": "/static/js/main.deb20bfd.js.map",
+    "453.43deabb9.chunk.js.map": "/static/js/453.43deabb9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fd4f0176.css",
+    "static/js/main.deb20bfd.js"
+  ]
+}
