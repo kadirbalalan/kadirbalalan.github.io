@@ -1,0 +1,448 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacettepe Üniversitesi</title>
+
+	<link rel="icon" type="image/png" sizes="32x32" href="/fav_ico/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/fav_ico/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/fav_ico/favicon-16x16.png">
+	<link rel="manifest" href="/fav_ico/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/fav_ico/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+    <link href="/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/css/style.css" rel="stylesheet" />
+    <link href="/css/all.min.css" rel="stylesheet" />
+
+    <link href="/css/animate.css" rel="stylesheet" />
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/easing.min.js"></script>
+
+    <script src="/js/counter.js"></script>
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;0,800;1,300;1,400;1,700;1,800&display=swap" rel="stylesheet">
+
+</head><body class="body_icsayfa ic_">
+<div class="container-fluid ust"><div class="container">
+        <div class="menu logo" >
+        <div class="logo_link h-100"><a href="/"><img src="/images/spacer.gif" /></a> </div>
+        <div class="menu_ust"><div class="d-none d-md-block float-right ml-3">
+		<a href="https://huysis.hacettepe.edu.tr" target="_blank"><i class="fas fa-desktop"></i></a>
+
+ <a href="/hakkinda/arama"><i class="fas fa-search"></i></a> 
+	<a href="https://bidb.hacettepe.edu.tr/tr/e-posta" target="_blank"><i class="fas fa-envelope"></i></a>
+    <a href="https://www.instagram.com/hacettepe_university/" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.facebook.com/HacettepeUniversitesiKurumsal" target="_blank"><i class="fab fa-facebook"></i></a>
+    <a href="https://twitter.com/Hacettepe1967" target="_blank"><i class="fab fa-twitter"></i></a>
+    <a href="https://www.youtube.com/HacettepeKurumsal/" target="_blank"><i class="fab fa-youtube"></i></a>
+
+</div>
+<div class="float-right d-none d-md-block ">
+	<a href="https://surdurulebilirkalkinma.hacettepe.edu.tr/tr" target="_blank">Sürdürülebilirlik</a> |
+	<a href="/kalite">Kalite</a> |
+    <a href="/ogrenci">Öğrenci</a> |
+    <a href="/personel">Personel</a> |
+    <a href="https://mezunum.hacettepe.edu.tr/" target="_blank">Mezun</a> |
+    <a href="https://universitem.hacettepe.edu.tr/" target="_blank" >Aday Öğrenci</a> |
+    <a href="/hakkinda/iletisim">İletişim</a> |
+    <a href="https://geribildirim.hacettepe.edu.tr" target="_blank">Geri Bildirim</a> |
+
+   
+    ﻿<a href="/">EN</a></div>
+
+</div>
+        <div class="menu_genel"><nav class="main-nav float-right d-none d-lg-block">
+    <div class="mobil_menu_logo mb-3"></div>
+    <ul>
+        <li><a href="/ogretim" class="cool-link2 ">Öğretim</a></li>
+        <li><a href="/arastirma" class="cool-link2 ">Araştırma</a></li>
+		<li><a href="/inovasyon" class="cool-link2 ">İnovasyon</a></li>
+		<li><a href="/toplumsalkatki" class="cool-link2 ">Toplumsal Katkı</a></li>
+        <li><a href="/saglik" class="cool-link2 ">Sağlık</a></li>
+		<li><a href="/uluslararasi" class="cool-link2 ">Uluslararası</a></li>
+        <li><a href="/yerleskedeyasam" class="cool-link2 ">Yerleşkeler</a></li>
+        <li><a href="/hakkinda" class="cool-link2 ">Hakkında</a></li>
+
+    </ul>
+    <div class="mobil_menu_alt mt-3">
+        <ul>
+<li><a href="https://surdurulebilirkalkinma.hacettepe.edu.tr/tr" target="_blank">Sürdürülebilirlik</a></li>
+        	
+        	<li><a href="/kalite">Kalite</a></li>
+	    <li><a href="/ogrenci">Öğrenci</a></li>
+	    <li><a href="/personel">Personel</a></li>
+	    <li><a href="https://mezunum.hacettepe.edu.tr/">Mezun</a></li>
+	    <li><a href="https://universitem.hacettepe.edu.tr/">Aday Öğrenci</a></li>
+    	<!--<li><a href="http://www2.hacettepe.edu.tr" target="_blank">Eski Web</a></li>-->
+
+            <!--<a href="/english" class="cool-link2">ENGLISH</a>-->
+			<li><a href="/" class="cool-link2">ENGLISH</a></li>
+
+            <li><a href="/" class="cool-link2">ANA SAYFA</a></li>
+            <li><a href="/hakkinda/iletisim" class="cool-link2">İLETİŞİM</a></li>
+            <li><a href="/hakkinda/arama" class="cool-link2">ARAMA</a></li>
+            <li><a href="https://kalite.hacettepe.edu.tr/tr/geribildirim" target="_blank">GERİ BİLDİRİM</a></li>
+
+
+        </ul>
+
+        <div class="d-flex justify-content-center mt-4">
+	   <a href="https://bidb.hacettepe.edu.tr/tr/e-posta" target="_blank"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.instagram.com/hacettepe_university/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/HacettepeUniversitesiKurumsal" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/Hacettepe1967" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.youtube.com/HacettepeKurumsal/" target="_blank"><i class="fab fa-youtube"></i></a>
+		</div>
+
+    </div>
+</nav></div>
+    </div>
+</div></div>
+
+    <div class="site_baslangic"></div>
+    <div class="resim_ic" style="background-image: url()">
+        <div class="klasor_baslik2"></div>
+    </div>
+    <div class="genel_ic2 container"><div class="baslik">HATA</div>
+<div class="icerik">
+<p>Aradığınız sayfa bulunamadı.</p>
+<p>Aradığınız kaynak kaldırılmış, kaynağın adı değiştirilmiş, sayfa kullanım dışı hale gelmiş ya da silinmiş, sayfa adı değiştirilmiş olabilir.</p>
+<p><a href="/hakkinda/siteharitasi">Aradığınız sayfaya ulaşmak için site haritasından yararlanabilirsiniz.</a></p>
+<p><a href="/hakkinda/arama">Site içerisinde arama yapmak için tıklayınız.</a></p>
+
+</div></div>
+
+<footer id="section_hu_footer">
+    <div class="container">
+        <div class="footer_logo"></div>
+
+        <div class="row alt_menu mt-5">
+
+            <!--egitim-->
+            <div class="col-lg-4 mb-3 footer_menu_col">
+                <div class="footer_menu_ust_baslik">ÖĞRETİM</div>
+
+                <p><a href="/ogretim/lisansonlisans_ogretim">Lisans-Önlisans Programları</a></p>
+                <p><a href="/ogretim/lisansustu_ogretim">Lisansüstü Programları</a></p>
+
+
+                <p><a href="https://oidb.hacettepe.edu.tr" target="_blank">Öğrenci İşleri Daire Başkanlığı</a></p>
+                <p><a href="https://bilsis.hacettepe.edu.tr" target="_blank">Öğrenci Bilgi Sistemi (BİLSİS)</a></p>
+                <p><a href="https://stl.hacettepe.edu.tr/" target="_blank">Sürdürülebilir Öğretme ve Öğrenme Merkezi</a>
+                </p>
+                <p><a href="https://huzem.hacettepe.edu.tr" target="_blank">Uzaktan Eğitim Uygulama ve Araştırma
+                        Merkezi</a></p>
+                <p><a href="https://hadi.hacettepe.edu.tr/" target="_blank">Uzaktan Önlisans-Lisans Eğitim Portalı</a>
+                </p>
+                <p><a href="https://lisansustu.hacettepe.edu.tr/login/index.php" target="_blank">Uzaktan Lisansüstü
+                        Eğitim Portalı</a></p>
+                <p><a href="https://ydyohazirlik.hacettepe.edu.tr/login/index.php" target="_blank">Uzaktan Yabancı Dil
+                        Eğitim Portalı</a></p>
+                <p><a href="https://yasamboyu.hacettepe.edu.tr/" target="_blank">Yaşam Boyu Öğrenme Merkezi</a></p>
+
+                <p><a href="https://oidb.hacettepe.edu.tr/" target="_blank">Akademik Takvim</a></p>
+
+
+                <p><a href="https://akts.hacettepe.edu.tr" target="_blank">Ders Kataloğu</a></p>
+                <p><a href="https://hubologna.hacettepe.edu.tr/" target="_blank">Bologna Koordinatörlüğü</a></p>
+                <p><a href="https://karmer.hacettepe.edu.tr" target="_blank">Kariyer Merkezi</a></p>
+                <p><a href="https://topluluklar.hacettepe.edu.tr" target="_blank">Öğrenci Toplulukları</a></p>
+                <p><a href="https://ydkydyo.hacettepe.edu.tr" target="_blank">Yabancı Dil Kursları</a></p>
+                <p><a href="https://tomer.hacettepe.edu.tr/" target="_blank">HÜ TÖMER</a></p>
+<p><a href="https://int.hacettepe.edu.tr/" target="_blank">Dış İlişkiler Koordinatörlüğü</a></p>
+
+                <p><a href="https://abofisi.hacettepe.edu.tr/" target="_blank">Avrupa Birliği Koordinatörlüğü</a></p>
+                <p><a href="https://mevlana.hacettepe.edu.tr/" target="_blank">Mevlâna Değişim Programı
+                        Koordinatörlüğü</a></p>
+                <p><a href="https://farabi.hacettepe.edu.tr/" target="_blank">Farabi Değişim Programı
+                        Koordinatörlüğü</a></p>
+
+                
+                <p><a href="https://secmeli.hacettepe.edu.tr" target="_blank">Seçmeli Dersler Koordinatörlüğü</a></p>
+                <p><a href="https://egitimkomisyonu.hacettepe.edu.tr/" target="_blank">Eğitim Komisyonu</a></p>
+                <p><a href="https://oyp.hacettepe.edu.tr/" target="_blank">Öğretim Üyesi Yetiştirme Programı
+                        Koordinatörlüğü</a></p>
+                <p><a href="https://eob.hacettepe.edu.tr/" target="_blank">Engelli Öğrenci Birimi</a></p>
+
+
+            </div>
+
+            <!--arastirma-->
+            <div class="col-lg-5 mb-3 footer_menu_col">
+                <div class="footer_menu_ust_baslik">ARAŞTIRMA</div>
+               <p><a href="/arastirma/arastirma_koordinatorlugu">Araştırma Koordinatörlüğü</a></p>
+                <p><a href="https://bap.hacettepe.edu.tr/" target="_blank">Bilimsel Araştırma Projeleri Koordinasyon
+                        Birimi</a></p>
+                <p><a href="https://pdo.hacettepe.edu.tr/" target="_blank">Proje Destek Ofisi (PDO)</a></p>
+               
+                <p><a href="https://bapsis.hacettepe.edu.tr/Default2.aspx" target="_blank">Proje Süreçleri Yönetim
+                        Sistemi (BAPSİS)</a></p>
+                <p><a href="https://dapsis.hacettepe.edu.tr/" target="_blank">Dış Kaynaklı Proje Süreçleri Yönetim
+                        Sistemi (DAPSİS)</a></p>
+                <p><a href="https://avesis.hacettepe.edu.tr/" target="_blank">Akademik Veri Yönetim Sistemi (AVESİS)</a>
+                </p>
+                <p><a href="https://lab.hacettepe.edu.tr/" target="_blank">Araştırma Laboratuvarları</a></p>
+                <p><a href="/arastirma/arastirma_uygulama_merkezleri">Uygulama ve Araştırma Merkezleri</a></p>
+                <p><a href="http://www.hastane.hacettepe.edu.tr/" target="_blank">Hacettepe Üniversitesi Hastaneleri</a>
+                </p>
+                <p><a href="https://www.hacettepeteknokent.com.tr/" target="_blank">Hacettepe Teknokent</a></p>
+                <p><a href="https://www.hacettepettm.com" target="_blank">Hacettepe Teknokent - Teknoloji Transfer
+                        Merkez (HT-TTM)</a></p>
+                <p><a href="https://etikkurul.hacettepe.edu.tr/" target="_blank">Etik Kurulları ve Komisyonlar</a></p>
+                <!-- <p><a href="https://bilimsanatkurullari.hacettepe.edu.tr/" target="_blank">Bilim ve Sanat Kurulları</a></p>-->
+                
+                <p><a href="https://library.hacettepe.edu.tr/" target="_blank">Hacettepe Üniversitesi Kütüphaneleri</a>
+                </p>
+            </div>
+
+            <!--akademik birimler-->
+            <div class="col-lg-3 mb-3 footer_menu_col">
+                <div class="footer_menu_ust_baslik">AKADEMİK BİRİMLER</div>
+
+                <div><a class="footer_menu_baslik mb-2" data-toggle="collapse" href="#a_fk1" role="button"
+                        aria-expanded="false" aria-controls="a_fk1">Fakülteler</a></div>
+                <div class="collapse footer_menu_div" id="a_fk1">
+                    <ul>
+                        <li><a href="https://bbbf.hacettepe.edu.tr/" target="_blank">Bilgisayar ve Bilişim Bilimleri Fakültesi</a></li>
+                        <li><a href="https://dis.hacettepe.edu.tr/" target="_blank">Diş Hekimliği Fakültesi</a></li>
+                        <li><a href="https://eczacilik.hacettepe.edu.tr/" target="_blank">Eczacılık Fakültesi</a></li>
+                        <li><a href="https://edebiyat.hacettepe.edu.tr/" target="_blank">Edebiyat Fakültesi</a></li>
+                        <li><a href="https://egitim.hacettepe.edu.tr/" target="_blank">Eğitim Fakültesi</a></li>
+                        <li><a href="https://fenfakultesi.hacettepe.edu.tr/" target="_blank">Fen Fakültesi</a></li>
+                        <li><a href="https://ftrfakulte.hacettepe.edu.tr/" target="_blank">Fizik Tedavi ve
+                                Rehabilitasyon Fakültesi</a></li>
+                        <li><a href="https://gsf.hacettepe.edu.tr/" target="_blank">Güzel Sanatlar Fakültesi</a></li>
+                        <li><a href="https://hemsirelik.hacettepe.edu.tr/" target="_blank">Hemşirelik Fakültesi</a></li>
+                        <li><a href="https://hukukfakultesi.hacettepe.edu.tr/" target="_blank">Hukuk Fakültesi</a></li>
+                        <li><a href="https://iibf.hacettepe.edu.tr/" target="_blank">İktisadi ve İdari Bilimler
+                                Fakültesi</a></li>
+                        <li><a href="https://iletisim.hacettepe.edu.tr/" target="_blank">İletişim Fakültesi</a></li>
+                        <li><a href="https://mimarlikfakultesi.hacettepe.edu.tr/" target="_blank">Mimarlık Fakültesi</a>
+                        </li>
+                        <li><a href="https://muhfak.hacettepe.edu.tr/" target="_blank">Mühendislik Fakültesi</a></li>
+                        <li><a href="https://sbf.hacettepe.edu.tr/" target="_blank">Sağlık Bilimleri Fakültesi</a></li>
+                        <li><a href="https://sporbilimleri.hacettepe.edu.tr/" target="_blank">Spor Bilimleri
+                                Fakültesi</a></li>
+                        <li><a href="https://tip.hacettepe.edu.tr/" target="_blank">Tıp Fakültesi</a></li>
+                    </ul>
+                </div>
+
+                <div><a class="footer_menu_baslik" data-toggle="collapse" href="#a_ens1" role="button"
+                        aria-expanded="false" aria-controls="a_ens1">Enstitüler</a></div>
+                <div class="collapse footer_menu_div" id="a_ens1">
+
+                    <ul>
+                        <li><a href="https://asienstitusu.hacettepe.edu.tr" target="_blank">Aşı Enstitüsü</a></li>
+                        <li><a href="https://ait.hacettepe.edu.tr/" target="_blank">Atatürk İlkeleri ve İnkılap Tarihi
+                                Enstitüsü</a></li>
+                        <li><a href="https://bilisim.hacettepe.edu.tr/" target="_blank">Bilişim Enstitüsü</a></li>
+                        <li><a href="https://cocuksagligi.hacettepe.edu.tr/" target="_blank">Çocuk Sağlığı Enstitüsü</a>
+                        </li>
+                        <li><a href="https://egitimbilimlerienstitusu.hacettepe.edu.tr/" target="_blank">Eğitim
+                                Bilimleri Enstitüsü</a></li>
+                        <li><a href="https://fenbilimleri.hacettepe.edu.tr/" target="_blank">Fen Bilimleri Enstitüsü</a>
+                        </li>
+                        <li><a href="https://gse.hacettepe.edu.tr/" target="_blank">Güzel Sanatlar Enstitüsü</a></li>
+                        <li><a href="https://halksagligiens.hacettepe.edu.tr/" target="_blank">Halk Sağlığı
+                                Enstitüsü</a></li>
+                        <li><a href="https://onkoloji.hacettepe.edu.tr/" target="_blank">Kanser Enstitüsü</a></li>
+                        <li><a href="https://norbil.hacettepe.edu.tr/" target="_blank">Nörolojik Bilimler ve Psikiyatri
+                                Enstitüsü</a></li>
+                        <li><a href="https://hips.hacettepe.edu.tr/" target="_blank">Nüfus Etütleri Enstitüsü</a></li>
+                        <li><a href="https://nbe.hacettepe.edu.tr/" target="_blank">Nükleer Bilimler Enstitüsü</a></li>
+                        <li><a href="https://saglikbilimleri.hacettepe.edu.tr/" target="_blank">Sağlık Bilimleri
+                                Enstitüsü</a></li>
+                        <li><a href="https://sosyalbilimler.hacettepe.edu.tr/" target="_blank">Sosyal Bilimler
+                                Enstitüsü</a></li>
+                        <li><a href="https://turkiyat.hacettepe.edu.tr/" target="_blank">Türkiyat Araştırmaları
+                                Enstitüsü</a></li>
+
+                    </ul>
+                </div>
+
+
+                <div><a class="footer_menu_baslik" data-toggle="collapse" href="#a_kns1" role="button"
+                        aria-expanded="false" aria-controls="a_kns1">Konservatuvar</a></div>
+                <div class="collapse footer_menu_div" id="a_kns1">
+
+                    <ul>
+                        <li><a href="https://adk.hacettepe.edu.tr" target="_blank">Ankara Devlet Konservatuvarı</a></li>
+                    </ul>
+                </div>
+
+                <div><a class="footer_menu_baslik" data-toggle="collapse" href="#a_yo1" role="button"
+                        aria-expanded="false" aria-controls="a_yo1">Yüksekokullar</a></div>
+                <div class="collapse footer_menu_div" id="a_yo1">
+
+                    <ul>
+                        <li><a href="https://ydyo.hacettepe.edu.tr" target="_blank">Yabancı Diller Yüksekokulu</a></li>
+                        <li><a href="https://aem.hacettepe.edu.tr/" target="_blank">Mesleki Teknoloji Yüksekokulu</a>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div><a class="footer_menu_baslik" data-toggle="collapse" href="#a_myo1" role="button"
+                        aria-expanded="false" aria-controls="a_myo1">Meslek Yüksekokulları</a></div>
+                <div class="collapse footer_menu_div" id="a_myo1">
+
+                    <ul>
+                        <li><a href="https://hacettepeaso.hacettepe.edu.tr/" target="_blank">Hacettepe Ankara Sanayi
+                                Odası 1. OSB Meslek Yüksekokulu</a></li>
+                        <li><a href="https://baskentosbtbmyo.hacettepe.edu.tr/" target="_blank">Başkent OSB Teknik
+                                Bilimler Meslek Yüksekokulu</a></li>
+                        <li><a href="https://shmyo.hacettepe.edu.tr/" target="_blank">Sağlık Hizmetleri Meslek
+                                Yüksekokulu</a></li>
+                        <li><a href="https://sbmy.hacettepe.edu.tr/" target="_blank">Sosyal Bilimler Meslek
+                                Yüksekokulu</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="footer_menu_ust_baslik pt-4">YÖNETİM BİRİMLERİ</div>
+
+                <p><a href="/hakkinda/yonetim">Üniversite Yönetimi</a></p>
+
+
+                <div><a class="footer_menu_baslik mb-2" data-toggle="collapse" href="#a_db2" role="button"
+                        aria-expanded="false" aria-controls="a_db2">Denetim Birimleri</a></div>
+                <div class="collapse footer_menu_div" id="a_db2">
+                    <ul>
+                        <li><a href="https://icdenetim.hacettepe.edu.tr/yetki_sorumluluk.shtml" target="_blank">İç
+                                Denetim Birimi</a></li>
+                    </ul>
+                </div>
+
+                <div><a class="footer_menu_baslik mb-2" data-toggle="collapse" href="#a_db1" role="button"
+                        aria-expanded="false" aria-controls="a_db1">İdari Yönetim Birimleri</a></div>
+                <div class="collapse footer_menu_div" id="a_db1">
+                    <ul>
+
+                        <li><a href="https://bidb.hacettepe.edu.tr" target="_blank">Bilgi İşlem Daire Başkanlığı</a>
+                        </li>
+                        <li><a href="https://hukukmusavirligi.hacettepe.edu.tr" target="_blank">Hukuk Müşavirliği</a>
+                        </li>
+                        <li><a href="https://imidb.hacettepe.edu.tr" target="_blank">İdari ve Mali İşler Daire
+                                Başkanlığı</a></li>
+                        <li><a href="https://library.hacettepe.edu.tr" target="_blank">Kütüphane ve Dokümantasyon Daire
+                                Başkanlığı</a></li>
+                        <li><a href="https://oidb.hacettepe.edu.tr" target="_blank">Öğrenci İşleri Daire Başkanlığı</a>
+                        </li>
+                        <li><a href="https://pdb.hacettepe.edu.tr" target="_blank">Personel Daire Başkanlığı</a></li>
+                        <!--<li><a href="http://www.peyzaj.hacettepe.edu.tr/" target="_blank">Peyzaj Planlama Müdürlüğü</a></li>-->
+                        <li><a href="https://sksdb.hacettepe.edu.tr" target="_blank">Sağlık, Kültür ve Spor Daire
+                                Başkanlığı</a></li>
+                        <li><a href="https://sgdb.hacettepe.edu.tr" target="_blank">Strateji Geliştirme Daire
+                                Başkanlığı</a></li>
+                        <!--<li><a href="http://www.uhm.hacettepe.edu.tr" target="_blank">Ulaşım Hizmetleri Müdürlüğü</a></li>-->
+                        <li><a href="https://yapi.hacettepe.edu.tr" target="_blank">Yapı İşleri ve Teknik Daire
+                                Başkanlığı</a></li>
+                        <br>
+                        <li><a href="https://bhim.hacettepe.edu.tr/" target="_blank">Basın ve Halkla İlişkiler
+                                Müdürlüğü</a></li>
+                        <li>Büro İşleri Müdürlüğü</li>
+                        <li>Yazı İşleri Müdürlüğü</li>
+                        <!--<li><a href="http://www.destekhizmetleri.hacettepe.edu.tr/" target="_blank">Destek Hizmetleri Müdürlüğü</a></li>-->
+
+                        <!--<li><a href="http://www.korumaguvenlik.hacettepe.edu.tr/" target="_blank">Koruma ve Güvenlik Müdürlüğü</a></li>-->
+
+
+                    </ul>
+                </div>
+
+                <p><a href="https://kalite.hacettepe.edu.tr/" target="_blank">Kalite Komisyonu</a></p>
+                <!--<p><a href="http://www.kalitekomisyonu.hacettepe.edu.tr/" target="_blank">Kalite Komisyonu (HÜKAK)</a></p>-->
+                <p><a href="/hakkinda/stratejik_plan">Stratejik Yönetim</a></p>
+                <p><a href="/hakkinda/kurumsal_kimlik">Kurumsal Kimlik</a></p>
+                <p><a href="/hakkinda/surdurulebilir_kalkinma">Sürdürülebilir Kalkınma</a></p>
+                <p><a href="/hakkinda/KVKK">Kişisel Verilerin İşlenmesi</a></p>
+                <p><a href="https://isgb.hacettepe.edu.tr/" target="_blank">İş Sağlığı ve Güvenliği</a></p>
+                <p><a href="http://syk.hacettepe.edu.tr" target="_blank">Sürdürülebilir Yerleşkeler Koordinatörlüğü</a></p>
+                <p><a href="https://digihu.hacettepe.edu.tr/" target="_blank">Dijital Dönüşüm ve Bilişim Koordinatörlüğü</a></p>
+		<p><a href="https://spordostu.hacettepe.edu.tr/" target="_blank">Spor Dostu Kampüs Koordinatörlüğü</a></p>
+                <p><a href="https://beb.hacettepe.edu.tr/" target="_blank">Bilgi Edinme Hakkı</a></p>
+                <p><a href="https://kalite.hacettepe.edu.tr/tr/geribildirim" target="_blank">Geri Bildirim</a></p>
+
+
+            </div>
+
+            <!--yonetim birimler-->
+
+
+        </div>
+
+        <div class="mb-3 text-center">
+            <img src="/images/yokak5.svg" height="120" />
+
+        </div>
+        <div class="mb-3 text-center">
+            <a href="https://gazete.hacettepe.edu.tr/" target="_blank" class="mr-5"><img src="/images/gazete_hacettepe_logo.svg" height="32" border="0"/></a>
+            <a href="https://radyo.hacettepe.edu.tr/" target="_blank"><img src="/images/logo_radyo.png" height="90" border="0"/></a>
+            <a href="https://www.youtube.com/c/HacettepeKurumsal" target="_blank"><img src="/images/logo_tv.png" height="90" border="0"/></a>
+        </div>
+        <div class="footer_sosyal">
+            <a href="https://huysis.hacettepe.edu.tr/" target="_blank"><img src="/img/logo_huysis_gray.svg" height="30"></a>
+            <a href="https://www.instagram.com/hacettepe_university/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/HacettepeUniversitesiKurumsal"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/Hacettepe1967" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.youtube.com/HacettepeKurumsal/"><i class="fab fa-youtube"></i></a>
+        </div>
+
+        <div class="mt-3 pt-3 mb-3 footer_menu_col footer_adres ">
+
+            <div class="row">
+                <div class="col-lg-9 mb-3 ">
+                    Hacettepe Üniversitesi Rektörlüğü Sıhhiye / ANKARA<br/>
+                    Santral: +90.312 305 50 00 (Sıhhiye) • +90.312 305 50 50 (Beytepe)<br/>
+                    <a href="mailto:rektorluk@hacettepe.edu.tr">rektorluk@hacettepe.edu.tr</a> (Rektörlük) • <a
+                            href="mailto:tanitim@hacettepe.edu.tr">tanitim@hacettepe.edu.tr</a> (Tanıtım Ofisi)
+
+
+                </div>
+
+                <div class="col-lg-3 mb-3 text-right">
+                    <img src="/images/logo_eua.png" height="70" border="0"/>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer_menu mb-3 mt-3">
+            <a href="/hakkinda/siteharitasi">Site Haritası</a>
+        </div>
+        <div class="footer_copyright">
+            © Copyright 2021 Hacettepe Üniversitesi | Her Hakkı Saklıdır
+        </div>
+    </div>
+</footer>
+<style>
+
+</style>
+<a href="" class="back-to-top" style="border:1px solid #ccc!important; color:#333!important; background-color: #fff !important;"><i class="fas fa-chevron-up text-secondary"></i></a>
+
+<script src="/js/mobile-nav.js"></script>
+<script src="/js/easing.min.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-86285128-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
