@@ -2,6 +2,7 @@ import React from "react";
 import textClass from '../assets/images/text-class.jpg';
 import neaLogo from '../assets/images/nea_logo.png';
 import pinSecret from '../assets/images/pinsecret.jpg';
+import semanticLinking from '../assets/images/semantic-linking.png';
 import '../assets/styles/Project.scss';
 
 function Project() {
@@ -9,6 +10,13 @@ function Project() {
         <div className="projects-container" id="projects">
             <h1>Personal Projects</h1>
             <div className="projects-grid">
+                <div className="project-card">
+                    <a href="https://github.com/kadirbalalan/semantic-internal-linking-agent" target="_blank" rel="noreferrer" className="image-container">
+                        <img src={semanticLinking} alt="Semantic Internal Linking Automation Agent" />
+                    </a>
+                    <a href="https://github.com/kadirbalalan/semantic-internal-linking-agent" target="_blank" rel="noreferrer"><h2>Semantic Internal Linking Automation Agent</h2></a>
+                    <p>An automated SEO agent built with n8n that analyzes content clusters used to intelligently inject semantic internal links.</p>
+                </div>
                 <div className="project-card">
                     <a href="https://github.com/kadirbalalan/Text-Classification-SpaCy/blob/main/Classification.ipynb" target="_blank" rel="noreferrer" className="image-container">
                         <img src={textClass} alt="Text Classification with SpaCy - NLP" />
