@@ -1,9 +1,10 @@
 {
   "files": {
     "main.css": "/static/css/main.fd4f0176.css",
-    "main.js": "/static/js/main.deb20bfd.js",
+    "main.js": "/static/js/main.4d8a02e2.js",
     "static/js/453.43deabb9.chunk.js": "/static/js/453.43deabb9.chunk.js",
     "static/media/bg-light.png": "/static/media/bg-light.bac0efb485244a522981.png",
+    "static/media/semantic-linking.png": "/static/media/semantic-linking.e90d332ab4a6109c58a2.png",
     "static/media/bg-dark.png": "/static/media/bg-dark.f420c6b8458af72de935.png",
     "static/media/nea_logo.png": "/static/media/nea_logo.62f60deb2b7c79c2afce.png",
     "static/media/pp.jpeg": "/static/media/pp.f10ebaf329b6d98a59aa.jpeg",
@@ -17,11 +18,11 @@
     "static/media/hacettepe.png": "/static/media/hacettepe.8ffe7be2b8a1a7485f89.png",
     "index.html": "/index.html",
     "main.fd4f0176.css.map": "/static/css/main.fd4f0176.css.map",
-    "main.deb20bfd.js.map": "/static/js/main.deb20bfd.js.map",
+    "main.4d8a02e2.js.map": "/static/js/main.4d8a02e2.js.map",
     "453.43deabb9.chunk.js.map": "/static/js/453.43deabb9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fd4f0176.css",
-    "static/js/main.deb20bfd.js"
+    "static/js/main.4d8a02e2.js"
   ]
 }
