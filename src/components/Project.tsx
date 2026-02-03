@@ -20,9 +20,9 @@ function Project() {
                 </div>
                 <div className="project-card">
                     <a href="https://github.com/kadirbalalan/automated_gsc_reports" target="_blank" rel="noreferrer" className="image-container">
-                        <img src={gscReports} alt="n8n Growth Engine SEO Report" />
+                        <img src={gscReports} alt="Automated Weekly GSC Reports" />
                     </a>
-                    <a href="https://github.com/kadirbalalan/automated_gsc_reports" target="_blank" rel="noreferrer"><h2>n8n Growth Engine SEO Report</h2></a>
+                    <a href="https://github.com/kadirbalalan/automated_gsc_reports" target="_blank" rel="noreferrer"><h2>Automated Weekly GSC Reports</h2></a>
                     <p>Solves the GSC data sampling issue by separating page and query requests to generate 100% accurate weekly SEO reports via email.</p>
                 </div>
                 <div className="project-card">
