@@ -3,6 +3,7 @@ import textClass from '../assets/images/text-class.jpg';
 import neaLogo from '../assets/images/nea_logo.png';
 import pinSecret from '../assets/images/pinsecret.jpg';
 import semanticLinking from '../assets/images/semantic-linking.png';
+import gscReports from '../assets/images/gsc-reports.png';
 import '../assets/styles/Project.scss';
 
 function Project() {
@@ -16,6 +17,13 @@ function Project() {
                     </a>
                     <a href="https://github.com/kadirbalalan/semantic-internal-linking-agent" target="_blank" rel="noreferrer"><h2>Semantic Internal Linking Automation Agent</h2></a>
                     <p>An automated SEO agent built with n8n that analyzes content clusters used to intelligently inject semantic internal links.</p>
+                </div>
+                <div className="project-card">
+                    <a href="https://github.com/kadirbalalan/automated_gsc_reports" target="_blank" rel="noreferrer" className="image-container">
+                        <img src={gscReports} alt="n8n Growth Engine SEO Report" />
+                    </a>
+                    <a href="https://github.com/kadirbalalan/automated_gsc_reports" target="_blank" rel="noreferrer"><h2>n8n Growth Engine SEO Report</h2></a>
+                    <p>Solves the GSC data sampling issue by separating page and query requests to generate 100% accurate weekly SEO reports via email.</p>
                 </div>
                 <div className="project-card">
                     <a href="https://github.com/kadirbalalan/Text-Classification-SpaCy/blob/main/Classification.ipynb" target="_blank" rel="noreferrer" className="image-container">
