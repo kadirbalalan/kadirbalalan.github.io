@@ -16,7 +16,19 @@ function Timeline() {
             className="vertical-timeline-element--work"
             contentStyle={{ background: 'white', color: 'rgb(39, 40, 34)' }}
             contentArrowStyle={{ borderRight: '7px solid  white' }}
-            date="May 2025 - Present"
+            date="March 2026 - Present"
+            iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
+            icon={<FontAwesomeIcon icon={faBriefcase} />}
+          >
+            <h3 className="vertical-timeline-element-title">Longship Marketing GmbH</h3>
+            <h4 className="vertical-timeline-element-subtitle">Applied AI Developer</h4>
+            <p>
+              Build and evaluate the AI content system behind 4 client bases: 100+ agents across 21 production n8n workflows. Cut per-article LLM cost 79% through model migration and prompt caching, and cut translation errors reaching human reviewers 72% with a redesigned AI review panel. Joined as AI Content Automation Specialist; promoted in September 2026.
+            </p>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            date="April 2025 - March 2026"
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
